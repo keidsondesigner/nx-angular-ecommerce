@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "layout": ["modules/features/src/index.ts"]
+      "modules/layout": ["modules/features/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

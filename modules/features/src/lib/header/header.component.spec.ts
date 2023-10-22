@@ -18,4 +18,9 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain title Ecommerce', () => {
+    const header: HTMLHeadingElement = fixture.nativeElement.querySelector('header');
+    expect(header.textContent?.trim()).toBe('Ecommerce');
+  })
 });

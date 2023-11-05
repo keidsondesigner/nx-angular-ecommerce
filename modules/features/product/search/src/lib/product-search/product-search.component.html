@@ -1,1 +1,18 @@
-<p>product-search works!</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Buscar produtos</mat-label>
+    <input
+      type="text"
+      placeholder="Digite o produto que você quer encontrar"
+      aria-label="Number"
+      matInput
+      [formControl]="searchFormControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+      <mat-option *ngFor="let item of products" [value]="item.name">
+        {{ item.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
